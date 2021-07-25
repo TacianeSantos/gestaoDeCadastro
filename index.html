@@ -52,17 +52,18 @@
                 <div class="grid-cadastro">
                         <fieldset class="grid-cadastro-item">
                             <h5>Cadastro de Cliente: </h5> <br/>
-                            <form method="get" action="envio_dados.php">
+                            <form onsubmit="return checa_formulario(this)" id="formCadastro" action="#" method="">
                                 <label>Nome:</label>
-                                <input type="text" name="nome" placeholder="digite seu Nome aqui" /> <br/>
+                                <input type="text" name="nome" id="txtNome" placeholder="digite seu Nome aqui" /> <br/>
                                 <label>Email:</label>
-                                <input type="e-mail" name="email" placeholder="Digite seu e-mail" /><br/>
+                                <input type="e-mail" name="email" id="txtEmail" placeholder="Digite seu e-mail" /><br/>
                                 <label>End:</label>
-                                <input type="text" name="text" placeholder="Digite seu endereço" /><br/>
+                                <input type="text" name="end" id="txtEnd" placeholder="Digite seu endereço" /><br/>
                                 <input type="submit" name="enviar" value="Enviar">  
                             </form>        
                         </fieldset>                    
                 </div>
-            </section>   
+            </section> 
+            <script src="/js/script.js"></script>  
         </body>
     </html>
